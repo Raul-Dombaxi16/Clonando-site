@@ -1,0 +1,108 @@
+/* Variáveis CSS */
+:root {
+    --bg-primary: #000000;
+    --text-light: #FFFFFF;
+    --text-primary-ligth: #F5F5F7;
+    --text-description: #6E6E73;
+    --link-start-page-color: #2997FF;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Página inicial */
+#Home {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 6px 12px;
+    min-height: 100vh;
+    height: 100%;
+}
+
+/* Secção cabeçalho */
+#Home #Cabecalho{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#Home #Cabecalho #Navigator {
+    min-width: 100%;
+    min-height: 86px;
+    height: auto;
+    padding: 1% 1.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-primary);
+    border-bottom: 1px solid rgb(40, 37, 37);
+    margin-top: 1px;
+    width: 100%;
+    opacity: 1.0;
+}
+
+#Home #Cabecalho #Navigator #menu {
+    width: 80%;
+    height: 80%;
+    padding: 1px 0.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 28px;
+}
+
+#Home #Cabecalho #Navigator #menu a {
+    text-decoration: none;
+    color: var(--text-description);
+    font-size: 12px;
+}
+
+#Home #Cabecalho #Navigator #menu li a i {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* Conteúdo principal */
+.secao1 {
+    background: var(--bg-primary);
+    width: 100%;
+    height: auto;
+    padding: 2% 15px;
+}
+
+#Home #main-home .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 16px;
+    margin-inline: auto;
+    word-spacing: 2.5px;
+    line-height: 1.2;
+}
+
+#Home #main-home .introduction > h1 {
+    font-size: 30px;
+    color: var(--text-primary-ligth);
+}
+
+#Home #main-home .introduction > p {
+    font-size: 17.5px;
+    color: var(--text-description);
+}
+
+#Home #main-home .introduction > a {
+    font-size: 15.5px;
+    color: var(--link-start-page-color);
+    text-decoration: none;
+    padding-top: 3.5px;
+    font-weight: 250;
+}
