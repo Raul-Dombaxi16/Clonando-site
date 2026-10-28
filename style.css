@@ -27,7 +27,7 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
-    background: var(--bg-primary);
+    
 }
 
 /* Página inicial */
@@ -36,7 +36,6 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 6px 12px;
-    background: var(--bg-primary);
     overflow-x: hidden;
 }
 
@@ -51,8 +50,8 @@ body {
 #Home #Cabecalho #Navigator {
     width: 100%;
     min-width: 0;
-    min-height: 40px;
-    padding: 5px;
+    min-height: 30px;
+    padding: 4px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -103,6 +102,12 @@ body {
     word-spacing: 2.5px;
     line-height: 1.2;
     padding-top: 50px;
+    margin-inline:auto;
+    margin-bottom:4px;
+}
+#Home #main-home .secao1 img{
+    margin-inline:auto;
+    overflow:hidden;
 }
 
 /* Título */
@@ -144,20 +149,56 @@ body {
     gap:12px;
     height: fit-content;
 }
-/* segunda secao */
-section[class="image-market"]{
+/* propaganda filme */
+.image-market {
     width: 100%;
-    height: fit-content;
+    overflow: hidden;
 }
-section[class="image-market"] img{
+
+.image-market img {
+    display: block;
     width: 100%;
-    height: fit-content;
+    max-width: 1300px;
+    height: auto;
+    margin-inline: auto;
 }
-section[class="phones-section"]{
+/* iphone14 img */
+.image-market1 {
     width: 100%;
-    height: fit-content;
+    overflow: hidden;
+    height: 450px;
+    position:relative;
 }
-section[class="phones-section"] img{
+.image-market1 > a {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    top:32.5%;
+    transform: translateX(-50%);
+    color: var(--link-start-page-color);
+    text-decoration: none;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.image-market1 img {
+    display: block;
+    width: 100%;
+    margin-inline: auto;
+    height: 500px;
+}
+
+/* multiplos dispositivos */
+
+#Home .quadro-img {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    margin-inline: auto;
+}
+#Home .quadro-img img {
     width: 100%;
     height: fit-content;
+    overflow: hidden;
 }
